@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(237, 208, 171);
+      }
+      h1 {
+        color: rgb(16, 23, 149);
+        font-size: 3rem;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #todo {
+        font-size: 1.5rem;
+        color: rgb(16, 23, 149);
+      }
+      #todoList {
+        color: rgb(140, 13, 157);
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      #addWhatToDo {
+        font-size: 1.5rem;
+        background-color: rgb(16, 23, 149);
+        color: antiquewhite;
+      }
+      .done {
+        /*класс для функции выполнения задачи*/
+        color: rgb(16, 23, 149);
+        font-size: 1.5rem;
+        font-weight: lighter;
+
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>ToDo List for Today</h1>
+      <div class="todo-input">
+        <input type="text" id="todo" placeholder="What to do?" />
+        <button id="addWhatToDo">Add to the list</button>
+      </div>
+      <ul id="todoList">
+        <!-- Здесь будут задачи -->
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
