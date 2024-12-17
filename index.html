@@ -3,54 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        background-color: rgb(43, 39, 59);
-      }
-      h1 {
-        color: rgb(208, 211, 16);
-        font-size: 3rem;
-      }
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      #todo {
-        font-size: 1.5rem;
-        color: rgb(16, 23, 149);
-      }
-      #todoList {
-        color: blanchedalmond;
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
-      #taskButton {
-        font-size: 1.5rem;
-        background-color: rgb(16, 23, 149);
-        color: antiquewhite;
-      }
-      .done {
-        /*класс для функции выполнения задачи*/
-        color: rgb(16, 23, 149);
-        font-size: 2.5rem;
-        font-weight: lighter;
-
-        text-decoration: line-through;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
+    <title>ToDo List</title>
   </head>
   <body>
     <div class="wrapper">
-      <h1>ToDo List for the Week</h1>
-      <div class="todo-input">
-        <input type="text" id="todoInput" placeholder="What am I going to do?" />
-        <button id="taskButton">ADD</button>
+      <h1 class="title">ToDo List</h1>
+      <div class="todo__input">
+        <input type="text" class="todo__input-field" placeholder="task" />
+        <button class="todo__button">ADD</button>
       </div>
-      <ul id="todoList">
-        <!-- Здесь будут задачи -->
-      </ul>
+      <ul class="todo__list"></ul>
     </div>
     <script src="script.js"></script>
   </body>
